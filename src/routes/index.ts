@@ -18,7 +18,6 @@ router.get('/generate-token/:client_id/:client_secret', (req, res) => {
 
     request.post(authOptions, function (error: any, response: any, body: any) {
         if (!error && response.statusCode === 200) {
-              
             return res.status(200).json(body);
         }
     })
