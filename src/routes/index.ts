@@ -21,8 +21,6 @@ router.get('/generate-token/:client_id/:client_secret', (req, res) => {
             return res.status(200).json(body);
         }
     })
-    
-
 });
 
 export default router;
