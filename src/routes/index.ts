@@ -1,9 +1,9 @@
-import { Router } from 'express';
-import request from 'request';
+const Router = require('express');
+const request = require('request');
 
 const router = Router();
 // Define tus rutas aquí. Por ejemplo:
-router.get('/generate-token/:client_id/:client_secret', (req, res) => {
+router.get('/generate-token/:client_id/:client_secret', (req: any, res: any) => {
     
     var authOptions = {
         url: 'https://accounts.spotify.com/api/token',
